@@ -1,0 +1,31 @@
+{
+  "name": "mintlify-docs",
+  "version": "1.0.0",
+  "description": "Use the starter kit to get your docs deployed and ready to customize.",
+  "main": "index.mdx",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "mint dev", 
+    "broken-links": "mint broken-links"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sweta1308/mintlify-docs.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sweta1308/mintlify-docs/issues"
+  },
+  "homepage": "https://github.com/sweta1308/mintlify-docs#readme",
+  "dependencies": {
+    "mint": "4.2.221",
+    "react": "^19.1.1"
+  },
+  "devDependencies": {
+    "@types/prop-types": "^15.7.15"
+  }
+}

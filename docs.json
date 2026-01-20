@@ -1,122 +1,145 @@
 {
-  "$schema": "https://mintlify.com/docs.json",
-  "theme": "mint",
-  "name": "Mint Starter Kit",
-  "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
-  },
-  "favicon": "/favicon.svg",
-  "navigation": {
-    "tabs": [
-      {
-        "tab": "Guides",
-        "groups": [
-          {
-            "group": "Getting started",
-            "pages": [
-              "index",
-              "quickstart",
-              "development"
-            ]
-          },
-          {
-            "group": "Customization",
-            "pages": [
-              "essentials/settings",
-              "essentials/navigation"
-            ]
-          },
-          {
-            "group": "Writing content",
-            "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/reusable-snippets"
-            ]
-          },
-          {
-            "group": "AI tools",
-            "pages": [
-              "ai-tools/cursor",
-              "ai-tools/claude-code",
-              "ai-tools/windsurf"
-            ]
-          }
+    "$schema": "https://mintlify.com/docs.json",
+    "name": "OpenMetadata Documentation",
+    "theme": "aspen",
+    "logo": "/public/images/icons/omd.svg",
+    "colors": {
+        "primary": "#6938EF",
+        "light": "#6938EF",
+        "dark": "#6938EF"
+    },
+    "favicon": "/public/images/icons/om-monogram.svg",
+    "navbar": {
+        "links": [
+            {
+                "label": "Community",
+                "icon": "Slack",
+                "href": "https://slack.open-metadata.org"
+            },
+            {
+                "label": "Support",
+                "icon": "Headphones",
+                "href": "mailto:support@getcollate.io"
+            },
+            {
+                "label": "Blogs",
+                "icon": "Book",
+                "href": "https://blog.open-metadata.org/"
+            },
+            {
+                "label": "Free Trial",
+                "href": "https://cloud.getcollate.io/"
+            }
         ]
-      },
-      {
-        "tab": "API reference",
-        "groups": [
-          {
-            "group": "API documentation",
-            "pages": [
-              "api-reference/introduction"
-            ]
-          },
-          {
-            "group": "Endpoint examples",
-            "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
-            ]
-          }
+    },
+    "navigation": {
+        "versions": [
+            {
+                "version": "1.11.x",
+                "groups": [
+                    {
+                        "group": "Getting started",
+                        "pages": [
+                            "v1.11.x/index"
+                        ]
+                    }
+                ]
+            },
+            {
+                "version": "v1.10.x",
+                "groups": [
+                    {
+                        "group": "Getting started",
+                        "pages": [
+                            "v1.10.x/index"
+                        ]
+                    }
+                ]
+            }
         ]
-      }
-    ],
-    "global": {
-      "anchors": [
+    },
+    "appearance": {
+        "default": "light",
+        "strict": true
+    },
+    "styling": {
+        "eyebrows": "breadcrumbs"
+    },
+    "topbarLinks": [],
+    "interaction": {
+        "drilldown": true
+    },
+    "seo": {
+        "metatags": {
+            "canonical": "https://docs.getcollate.io"
+        }
+    },
+    "footer": {
+        "socials": {
+            "linkedin": "https://www.linkedin.com/company/collateinc",
+            "youtube": "https://www.youtube.com/@CollateData",
+            "x": "https://twitter.com/collatedata"
+        },
+        "links": [
+            {
+                "items": [
+                    {
+                        "label": "Terms of Service",
+                        "href": "https://www.getcollate.io/terms"
+                    },
+                    {
+                        "label": "Privacy Policy",
+                        "href": "https://www.getcollate.io/privacypolicy"
+                    },
+                    {
+                        "label": "Trust Center",
+                        "href": "https://trustcenter.getcollate.io/"
+                    },
+                    {
+                        "label": "Contact Us",
+                        "href": "https://www.getcollate.io/contact-sales"
+                    }
+                ]
+            }
+        ]
+    },
+    "redirects": [
         {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
+            "source": "/main-concepts/*",
+            "destination": "/"
         },
         {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
+            "source": "/security/oidc",
+            "destination": "/how-to-guides/sso"
+        },
+        {
+            "source": "/security/one-login",
+            "destination": "/how-to-guides/sso"
+        },
+        {
+            "source": "/security/keycloak",
+            "destination": "/how-to-guides/sso"
+        },
+        {
+            "source": "/security/saml*",
+            "destination": "/how-to-guides/sso"
+        },
+        {
+            "source": "/security/*",
+            "destination": "/how-to-guides/sso/*"
+        },
+        {
+            "source": "/collateai/*",
+            "destination": "/collate-ai/*"
+        },
+        {
+            "source": "/how-to-guides/mcp/*",
+            "destination": "/collate-ai/mcp/*"
         }
-      ]
-    }
-  },
-  "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
-  },
-  "navbar": {
-    "links": [
-      {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
-      }
     ],
-    "primary": {
-      "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+    "integrations": {
+        "ga4": {
+            "measurementId": "GTM-554C968W"
+        }
     }
-  },
-  "contextual": {
-    "options": [
-     "copy",
-     "view",
-     "chatgpt",
-     "claude",
-     "perplexity",
-     "mcp",
-     "cursor",
-     "vscode"
-   ]
-  },
-  "footer": {
-    "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
-    }
-  }
 }
