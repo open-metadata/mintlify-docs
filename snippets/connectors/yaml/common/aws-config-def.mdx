@@ -1,0 +1,80 @@
+AWS Access Key Credentials
+
+**awsAccessKeyId** and **awsSecretAccessKey** are used to authenticate and authorize programmatic requests to AWS services.
+
+An access key consists of:
+- **Access Key ID** (for example, `AKIAIOSFODNN7EXAMPLE`)
+- **Secret Access Key** (for example, `wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY`)
+
+Both values must be provided together when using static credentials.
+
+For more information, see
+[Managing access keys](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html).
+
+AWS Session Token
+
+**awsSessionToken** is required when using **temporary security credentials**, such as those obtained via AWS STS.
+
+The session token must be provided along with the access key ID and secret access key for the duration of the session.
+
+AWS Region
+
+**awsRegion** specifies the AWS Region where the target service is deployed (for example, `us-east-1`).
+
+This is the **only required parameter** when configuring an AWS connection. Other credentials can be resolved automatically using environment variables, AWS profiles, or IAM roles.
+
+Learn more in the
+[AWS Regions and Availability Zones documentation](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.RegionsAndAvailabilityZones.html).
+
+Custom Endpoint URL
+
+**endPointURL** is an optional custom endpoint used to connect to an AWS service.
+
+You may want to specify this when:
+- Using VPC endpoints
+- Connecting to local or AWS-compatible services
+- Overriding the default regional endpoint
+
+See
+[AWS service endpoints](https://docs.aws.amazon.com/general/latest/gr/rande.html) for details.
+
+AWS Profile Name
+
+**profileName** specifies the AWS CLI profile to use for authentication.
+
+Profiles store credentials and configuration in AWS config files.
+If not specified, the `default` profile is used.
+
+Learn more about
+[Named profiles for the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-profiles.html).
+
+Assume Role ARN
+
+**assumeRoleArn** is the Amazon Resource Name (ARN) of the IAM role to assume.
+
+This is commonly used for:
+- Cross-account access
+- Delegated permissions
+- Enhanced security setups
+
+This field is **required** when using Assume Role authentication.
+
+See the
+[AssumeRole API reference](https://docs.aws.amazon.com/STS/latest/APIReference/API_AssumeRole.html).
+
+Assume Role Session Name
+
+**assumeRoleSessionName** identifies the assumed role session.
+
+This value helps uniquely identify a session when the same role is assumed multiple times or by different principals.
+
+If not provided, the default value `OpenMetadataSession` is used.
+
+Assume Role Source Identity
+
+**assumeRoleSourceIdentity** is an optional source identity passed when assuming a role.
+
+This value is recorded in AWS CloudTrail logs and can be used to trace actions performed using the assumed role.
+
+See
+[Source Identity in AssumeRole](https://docs.aws.amazon.com/STS/latest/APIReference/API_AssumeRole.html).

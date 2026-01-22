@@ -1,0 +1,171 @@
+## Lineage
+
+After running a Metadata Ingestion workflow, we can run Lineage workflow.
+While the `serviceName` will be the same to that was used in Metadata Ingestion, so the ingestion bot can get the `serviceConnection` details from the server.
+
+### 1. Define the YAML Config
+
+This is a sample config for {connector} Lineage:
+
+<CodePreview>
+
+<ContentPanel>
+
+<ContentSection id={1} title="Source Configuration" lines="4">
+
+Configure the source type and service name for your lineage workflow.
+
+You can find all the definitions and types for the `sourceConfig` [here](https://github.com/open-metadata/OpenMetadata/blob/main/openmetadata-spec/src/main/resources/json/schema/metadataIngestion/databaseServiceQueryLineagePipeline.json).
+
+</ContentSection>
+
+<ContentSection id={2} title="Lineage Config Type" lines="6">
+
+**type**: Set to `DatabaseLineage` for database lineage ingestion.
+
+</ContentSection>
+
+<ContentSection id={3} title="Query Log Duration" lines="7-8">
+
+**queryLogDuration**: Configuration to tune how far we want to look back in query logs to process lineage data in days.
+
+</ContentSection>
+
+<ContentSection id={4} title="Parsing Timeout Limit" lines="9">
+
+**parsingTimeoutLimit**: Configuration to set the timeout for parsing the query in seconds.
+
+</ContentSection>
+
+<ContentSection id={5} title="Filter Condition" lines="10">
+
+**filterCondition**: Condition to filter the query history.
+
+</ContentSection>
+
+<ContentSection id={6} title="Result Limit" lines="11">
+
+**resultLimit**: Configuration to set the limit for query logs.
+
+</ContentSection>
+
+<ContentSection id={7} title="Query Log File Path" lines="12-13">
+
+**queryLogFilePath**: Configuration to set the file path for query logs. If instead of getting the query logs from the database we want to pass a file with the queries.
+
+</ContentSection>
+
+<ContentSection id={8} title="Database Filter Pattern" lines="14-19">
+
+**databaseFilterPattern**: Regex to only fetch databases that matches the pattern.
+
+</ContentSection>
+
+<ContentSection id={9} title="Schema Filter Pattern" lines="20-25">
+
+**schemaFilterPattern**: Regex to only fetch tables or databases that matches the pattern.
+
+</ContentSection>
+
+<ContentSection id={10} title="Table Filter Pattern" lines="26-32">
+
+**tableFilterPattern**: Regex to only fetch tables or databases that matches the pattern.
+
+</ContentSection>
+
+<ContentSection id={11} title="Override View Lineage" lines="33">
+
+**overrideViewLineage**: Set the 'Override View Lineage' toggle to control whether to override the existing view lineage.
+
+</ContentSection>
+
+<ContentSection id={12} title="Process View Lineage" lines="34">
+
+**processViewLineage**: Set the 'Process View Lineage' toggle to control whether to process view lineage.
+
+</ContentSection>
+
+<ContentSection id={13} title="Process Query Lineage" lines="35">
+
+**processQueryLineage**: Set the 'Process Query Lineage' toggle to control whether to process query lineage.
+
+</ContentSection>
+
+<ContentSection id={14} title="Process Stored Procedure Lineage" lines="36">
+
+**processStoredProcedureLineage**: Set the 'Process Stored ProcedureLog Lineage' toggle to control whether to process stored procedure lineage.
+
+</ContentSection>
+
+<ContentSection id={15} title="Threads" lines="37">
+
+**threads**: Number of Threads to use in order to parallelize lineage ingestion.
+
+</ContentSection>
+
+<ContentSection id={16} title="Sink Configuration" lines="38-40">
+
+To send the metadata to OpenMetadata, it needs to be specified as `type: metadata-rest`.
+
+</ContentSection>
+
+</ContentPanel>
+
+<CodePanel fileName="{connector}_lineage.yaml">
+
+```yaml
+source:
+  type: {connector}-lineage
+  serviceName: {connector}
+  sourceConfig:
+    config:
+      type: DatabaseLineage
+      # Number of days to look back
+      queryLogDuration: 1
+      parsingTimeoutLimit: 300
+      # filterCondition: query_text not ilike '--- metabase query %'
+      resultLimit: 1000
+      # If instead of getting the query logs from the database we want to pass a file with the queries
+      # queryLogFilePath: /tmp/query_log/file_path
+      # databaseFilterPattern:
+      #   includes:
+      #     - database1
+      #     - database2
+      #   excludes:
+      #     - database3
+      # schemaFilterPattern:
+      #   includes:
+      #     - schema1
+      #     - schema2
+      #   excludes:
+      #     - schema3
+      # tableFilterPattern:
+      #   includes:
+      #     - table1
+      #     - table2
+      #   excludes:
+      #     - table3
+      #     - table4
+      overrideViewLineage: false
+      processViewLineage: true
+      processQueryLineage: true
+      processStoredProcedureLineage: true
+      threads: 1
+sink:
+  type: metadata-rest
+  config: {}
+```
+
+</CodePanel>
+
+</CodePreview>
+
+- You can learn more about how to configure and run the Lineage Workflow to extract Lineage data from [here](/connectors/ingestion/workflows/lineage)
+
+### 2. Run with the CLI
+
+After saving the YAML config, we will run the command the same way we did for the metadata ingestion:
+
+```bash
+metadata ingest -c <path-to-yaml>
+```

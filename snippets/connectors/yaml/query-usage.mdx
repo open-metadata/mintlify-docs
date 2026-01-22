@@ -1,0 +1,113 @@
+## Query Usage
+
+The Query Usage workflow will be using the `query-parser` processor.
+
+After running a Metadata Ingestion workflow, we can run Query Usage workflow.
+While the `serviceName` will be the same to that was used in Metadata Ingestion, so the ingestion bot can get the `serviceConnection` details from the server.
+
+### 1. Define the YAML Config
+
+This is a sample config for {connector} Usage:
+
+<CodePreview>
+
+<ContentPanel>
+
+<ContentSection id={1} title="Source Configuration" lines="4">
+
+Configure the source type and service name for your usage workflow.
+
+</ContentSection>
+
+<ContentSection id={2} title="Usage Config Type" lines="6">
+
+**type**: Set to `DatabaseUsage` for database usage ingestion.
+
+</ContentSection>
+
+<ContentSection id={3} title="Query Log Duration" lines="8">
+
+**queryLogDuration**: Configuration to tune how far we want to look back in query logs to process usage data (in days).
+
+</ContentSection>
+
+<ContentSection id={4} title="Stage File Location" lines="10">
+
+**stageFileLocation**: Temporary file name to store the query logs before processing. Absolute file path required.
+
+Note that the location is a directory that will be cleaned at the end of the ingestion.
+
+</ContentSection>
+
+<ContentSection id={5} title="Result Limit" lines="11">
+
+**resultLimit**: Configuration to set the limit for query logs.
+
+</ContentSection>
+
+<ContentSection id={6} title="Query Log File Path" lines="13">
+
+**queryLogFilePath**: Configuration to set the file path for query logs. If instead of getting the query logs from the database we want to pass a file with the queries.
+
+</ContentSection>
+
+<ContentSection id={7} title="Processor Configuration" lines="14-16">
+
+Choose the `query-parser` processor to parse and process the query logs.
+
+</ContentSection>
+
+<ContentSection id={8} title="Stage Configuration" lines="17-20">
+
+Configure the staging location for table usage data before it's sent to OpenMetadata.
+
+</ContentSection>
+
+<ContentSection id={9} title="Bulk Sink Configuration" lines="21-24">
+
+Configure the bulk sink for metadata usage ingestion.
+
+</ContentSection>
+
+</ContentPanel>
+
+<CodePanel fileName="{connector}_usage.yaml">
+
+```yaml
+source:
+  type: {connector}-usage
+  serviceName: {connector}
+  sourceConfig:
+    config:
+      type: DatabaseUsage
+      # Number of days to look back
+      queryLogDuration: 7
+      # This is a directory that will be DELETED after the usage runs
+      stageFileLocation: <path to store the stage file>
+      # resultLimit: 1000
+      # If instead of getting the query logs from the database we want to pass a file with the queries
+      # queryLogFilePath: path-to-file
+processor:
+  type: query-parser
+  config: {}
+stage:
+  type: table-usage
+  config:
+    filename: /tmp/{connector}_usage
+bulkSink:
+  type: metadata-usage
+  config:
+    filename: /tmp/{connector}_usage
+```
+
+</CodePanel>
+
+</CodePreview>
+
+### 2. Run with the CLI
+
+After saving the YAML config, we will run the command the same way we did for the metadata ingestion:
+
+```bash
+metadata usage -c <path-to-yaml>
+```

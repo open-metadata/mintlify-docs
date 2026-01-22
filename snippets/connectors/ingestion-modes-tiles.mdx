@@ -1,0 +1,16 @@
+export default function IngestionModesTiles({ yamlPath }) {
+  return (
+    <Steps>
+      <Step title="Run via UI">
+        Use the connector form in the OpenMetadata UI to configure connections and schedule ingestions without writing
+        YAML.
+      </Step>
+      {yamlPath && (
+        <Step title="Run via YAML">
+          Prefer configuration-as-code? Follow the YAML guide at <a href={yamlPath}>this path</a> to run the connector
+          externally.
+        </Step>
+      )}
+    </Steps>
+  );
+}

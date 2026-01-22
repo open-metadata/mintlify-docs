@@ -1,0 +1,134 @@
+## Auto Classification
+
+The Auto Classification workflow will be using the `orm-profiler` processor.
+
+After running a Metadata Ingestion workflow, we can run the Auto Classification workflow.
+While the `serviceName` will be the same to that was used in Metadata Ingestion, so the ingestion bot can get the `serviceConnection` details from the server.
+
+### 1. Define the YAML Config
+
+This is a sample config for the Auto Classification Workflow:
+
+<CodePreview>
+
+<ContentPanel>
+
+<ContentSection id={1} title="Source Configuration" lines="1-3">
+
+Configure the source type and service name for your auto classification workflow.
+
+</ContentSection>
+
+<ContentSection id={2} title="Auto Classification Config Type" lines="4-6">
+
+**type**: Set to `AutoClassification` for automatic PII tagging.
+
+</ContentSection>
+
+<ContentSection id={3} title="Store Sample Data" lines="7">
+
+**storeSampleData**: Option to turn on/off storing sample data. If enabled, we will ingest sample data for each table.
+
+</ContentSection>
+
+<ContentSection id={4} title="Enable Auto Classification" lines="8">
+
+**enableAutoClassification**: Optional configuration to automatically tag columns that might contain sensitive information.
+
+</ContentSection>
+
+<ContentSection id={5} title="Confidence" lines="9">
+
+**confidence**: Set the Confidence value for which you want the column to be tagged as PII. Confidence value ranges from 0 to 100. A higher number will yield less false positives but more false negatives. A lower number will yield more false positives but less false negatives.
+
+</ContentSection>
+
+<ContentSection id={6} title="Database Filter Pattern" lines="10-15">
+
+**databaseFilterPattern**: Regex to only fetch databases that matches the pattern.
+
+</ContentSection>
+
+<ContentSection id={7} title="Schema Filter Pattern" lines="16-21">
+
+**schemaFilterPattern**: Regex to only fetch tables or databases that matches the pattern.
+
+</ContentSection>
+
+<ContentSection id={8} title="Table Filter Pattern" lines="22-27">
+
+**tableFilterPattern**: Regex to only fetch tables or databases that matches the pattern.
+
+</ContentSection>
+
+<ContentSection id={9} title="Processor Configuration" lines="28-30">
+
+Choose the `orm-profiler`. Its config can also be updated to define tests from the YAML itself instead of the UI.
+
+**tableConfig**: `tableConfig` allows you to set up some configuration at the table level.
+
+</ContentSection>
+
+<ContentSection id={10} title="Sink Configuration" lines="31-33">
+
+To send the metadata to OpenMetadata, it needs to be specified as `type: metadata-rest`.
+
+</ContentSection>
+
+</ContentPanel>
+
+<CodePanel fileName="{connector}_auto_classification.yaml">
+
+```yaml
+source:
+  type: {connector}
+  serviceName: {connector}
+  sourceConfig:
+    config:
+      type: AutoClassification
+      # storeSampleData: true
+      # enableAutoClassification: true
+      # confidence: 80
+      # databaseFilterPattern:
+      #   includes:
+      #     - database1
+      #     - database2
+      #   excludes:
+      #     - database3
+      # schemaFilterPattern:
+      #   includes:
+      #     - schema1
+      #     - schema2
+      #   excludes:
+      #     - schema3
+      # tableFilterPattern:
+      #   includes:
+      #     - table1
+      #     - table2
+      #   excludes:
+      #     - table3
+processor:
+  type: orm-profiler
+  config: {}
+sink:
+  type: metadata-rest
+  config: {}
+```
+
+</CodePanel>
+
+</CodePreview>
+
+### 2. Run with the CLI
+
+After saving the YAML config, we will run the command the same way we did for the metadata ingestion:
+
+```bash
+metadata classify -c <path-to-yaml>
+```
+
+<Tip>
+
+Now instead of running `ingest`, we are using the `classify` command to select the Auto Classification workflow.
+
+</Tip>
