@@ -1155,293 +1155,353 @@
                     {
                         "group": "How-to Guides",
                         "pages": [
-                            "v1.11.x/how-to-guides/index",
+                            "v1.11.x/how-to-guides/index"
+                        ]
+                    }
+                ]
+            },
+            {
+                "tab": "MCP",
+                "groups": [
+                    {
+                        "group": "MCP",
+                        "pages": [
+                            "v1.11.x/how-to-guides/mcp",
+                            "v1.11.x/how-to-guides/mcp/connect",
+                            "v1.11.x/how-to-guides/mcp/reference",
+                            "v1.11.x/how-to-guides/mcp/claude",
+                            "v1.11.x/how-to-guides/mcp/goose",
+                            "v1.11.x/how-to-guides/mcp/cursor"
+                        ]
+                    }
+                ]
+            },
+            {
+                "tab": "Admin Guide",
+                "groups": [
+                    {
+                        "group": "Admin Guide",
+                        "pages": [
+                            "v1.11.x/how-to-guides/admin-guide/index",
+                            "v1.11.x/how-to-guides/admin-guide/how-to-ingest-metadata",
+                            "v1.11.x/how-to-guides/admin-guide/delete-service-connection",
                             {
-                                "group": "MCP",
+                                "group": "Manage Teams and Users",
                                 "pages": [
-                                    "v1.11.x/how-to-guides/mcp",
-                                    "v1.11.x/how-to-guides/mcp/connect",
-                                    "v1.11.x/how-to-guides/mcp/reference",
-                                    "v1.11.x/how-to-guides/mcp/claude",
-                                    "v1.11.x/how-to-guides/mcp/goose",
-                                    "v1.11.x/how-to-guides/mcp/cursor"
+                                    "v1.11.x/how-to-guides/admin-guide/teams-and-users/index",
+                                    "v1.11.x/how-to-guides/admin-guide/teams-and-users/team-structure-openmetadata",
+                                    "v1.11.x/how-to-guides/admin-guide/teams-and-users/add-team",
+                                    "v1.11.x/how-to-guides/admin-guide/teams-and-users/invite-users",
+                                    "v1.11.x/how-to-guides/admin-guide/teams-and-users/add-users",
+                                    "v1.11.x/how-to-guides/admin-guide/teams-and-users/change-team-type"
                                 ]
                             },
                             {
-                                "group": "Admin Guide",
+                                "group": "Advanced Guide for Roles and Policies",
                                 "pages": [
-                                    "v1.11.x/how-to-guides/admin-guide/index",
-                                    "v1.11.x/how-to-guides/admin-guide/how-to-ingest-metadata",
-                                    "v1.11.x/how-to-guides/admin-guide/delete-service-connection",
-                                    {
-                                        "group": "Manage Teams and Users",
-                                        "pages": [
-                                            "v1.11.x/how-to-guides/admin-guide/teams-and-users/index",
-                                            "v1.11.x/how-to-guides/admin-guide/teams-and-users/team-structure-openmetadata",
-                                            "v1.11.x/how-to-guides/admin-guide/teams-and-users/add-team",
-                                            "v1.11.x/how-to-guides/admin-guide/teams-and-users/invite-users",
-                                            "v1.11.x/how-to-guides/admin-guide/teams-and-users/add-users",
-                                            "v1.11.x/how-to-guides/admin-guide/teams-and-users/change-team-type"
-                                        ]
-                                    },
-                                    {
-                                        "group": "Advanced Guide for Roles and Policies",
-                                        "pages": [
-                                            "v1.11.x/how-to-guides/admin-guide/roles-policies/index",
-                                            "v1.11.x/how-to-guides/admin-guide/roles-policies/authorization",
-                                            "v1.11.x/how-to-guides/admin-guide/roles-policies/use-cases"
-                                        ]
-                                    },
-                                    "v1.11.x/how-to-guides/admin-guide/cli-ingestion-with-basic-auth",
-                                    "v1.11.x/how-to-guides/admin-guide/how-to-add-custom-logo",
-                                    "v1.11.x/how-to-guides/admin-guide/reindexing-search",
-                                    "v1.11.x/how-to-guides/admin-guide/data-insights",
-                                    "v1.11.x/how-to-guides/admin-guide/permission-debugger",
-                                    {
-                                        "group": "Persona and Landing Page Customization",
-                                        "pages": [
-                                            "v1.11.x/how-to-guides/admin-guide/persona-landing-page-customization/index",
-                                            "v1.11.x/how-to-guides/admin-guide/persona-landing-page-customization/customizable-landing-page",
-                                            "v1.11.x/how-to-guides/admin-guide/persona-landing-page-customization/defining-persona"
-                                        ]
-                                    }
+                                    "v1.11.x/how-to-guides/admin-guide/roles-policies/index",
+                                    "v1.11.x/how-to-guides/admin-guide/roles-policies/authorization",
+                                    "v1.11.x/how-to-guides/admin-guide/roles-policies/use-cases"
                                 ]
                             },
+                            "v1.11.x/how-to-guides/admin-guide/cli-ingestion-with-basic-auth",
+                            "v1.11.x/how-to-guides/admin-guide/how-to-add-custom-logo",
+                            "v1.11.x/how-to-guides/admin-guide/reindexing-search",
+                            "v1.11.x/how-to-guides/admin-guide/data-insights",
+                            "v1.11.x/how-to-guides/admin-guide/permission-debugger",
                             {
-                                "group": "Guide for Data Users",
+                                "group": "Persona and Landing Page Customization",
                                 "pages": [
-                                    "v1.11.x/how-to-guides/guide-for-data-users/index",
-                                    "v1.11.x/how-to-guides/guide-for-data-users/basics-openmetadata",
-                                    "v1.11.x/how-to-guides/guide-for-data-users/data-asset-tabs",
-                                    "v1.11.x/how-to-guides/guide-for-data-users/description",
-                                    "v1.11.x/how-to-guides/guide-for-data-users/request-description",
-                                    "v1.11.x/how-to-guides/guide-for-data-users/data-ownership",
-                                    "v1.11.x/how-to-guides/guide-for-data-users/follow-data-asset",
-                                    "v1.11.x/how-to-guides/guide-for-data-users/tags",
-                                    "v1.11.x/how-to-guides/guide-for-data-users/request-tags",
-                                    "v1.11.x/how-to-guides/guide-for-data-users/glossary",
-                                    "v1.11.x/how-to-guides/guide-for-data-users/custom",
-                                    "v1.11.x/how-to-guides/guide-for-data-users/theme",
-                                    "v1.11.x/how-to-guides/guide-for-data-users/announcements",
-                                    "v1.11.x/how-to-guides/guide-for-data-users/add-announcement",
-                                    "v1.11.x/how-to-guides/guide-for-data-users/versions",
-                                    "v1.11.x/how-to-guides/guide-for-data-users/delete",
-                                    "v1.11.x/how-to-guides/guide-for-data-users/browser-ext"
-                                ]
-                            },
-                            {
-                                "group": "Data Discovery",
-                                "pages": [
-                                    "v1.11.x/how-to-guides/data-discovery/index",
-                                    "v1.11.x/how-to-guides/data-discovery/discover",
-                                    "v1.11.x/how-to-guides/data-discovery/hierarchy",
-                                    "v1.11.x/how-to-guides/data-discovery/preview",
-                                    "v1.11.x/how-to-guides/data-discovery/details",
-                                    "v1.11.x/how-to-guides/data-discovery/advanced",
-                                    "v1.11.x/how-to-guides/data-discovery/bulk-upload",
-                                    "v1.11.x/how-to-guides/data-discovery/import",
-                                    "v1.11.x/how-to-guides/data-discovery/export",
-                                    "v1.11.x/how-to-guides/data-discovery/troubleshooting",
-                                    "v1.11.x/how-to-guides/data-discovery/table-constraint",
-                                    {
-                                        "group": "OpenMetadata Chrome Extension",
-                                        "pages": [
-                                            "v1.11.x/how-to-guides/data-discovery/openmetadata-extension",
-                                            "v1.11.x/how-to-guides/data-discovery/openmetadata-extension/activity-feeds",
-                                            "v1.11.x/how-to-guides/data-discovery/openmetadata-extension/looking-up",
-                                            "v1.11.x/how-to-guides/data-discovery/openmetadata-extension/viewing-tasks"
-                                        ]
-                                    }
-                                ]
-                            },
-                            {
-                                "group": "Data Contracts",
-                                "pages": [
-                                    "v1.11.x/how-to-guides/data-contracts/index",
-                                    "v1.11.x/how-to-guides/data-contracts/create",
-                                    "v1.11.x/how-to-guides/data-contracts/spec"
-                                ]
-                            },
-                            {
-                                "group": "Data Collaboration",
-                                "pages": [
-                                    "v1.11.x/how-to-guides/data-collaboration/index",
-                                    "v1.11.x/how-to-guides/data-collaboration/activity-feeds",
-                                    "v1.11.x/how-to-guides/data-collaboration/conversation",
-                                    "v1.11.x/how-to-guides/data-collaboration/tasks",
-                                    "v1.11.x/how-to-guides/data-collaboration/request-description",
-                                    "v1.11.x/how-to-guides/data-collaboration/request-tags",
-                                    "v1.11.x/how-to-guides/data-collaboration/announcements",
-                                    "v1.11.x/how-to-guides/data-collaboration/add-announcement"
-                                ]
-                            },
-                            {
-                                "group": "Data Quality and Observability",
-                                "pages": [
-                                    "v1.11.x/how-to-guides/data-quality-observability/index",
-                                    {
-                                        "group": "Data Quality",
-                                        "pages": [
-                                            "v1.11.x/how-to-guides/data-quality-observability/quality/index",
-                                            "v1.11.x/how-to-guides/data-quality-observability/quality/configure",
-                                            "v1.11.x/how-to-guides/data-quality-observability/quality/tests-yaml",
-                                            "v1.11.x/how-to-guides/data-quality-observability/quality/tests-ui",
-                                            "v1.11.x/how-to-guides/data-quality-observability/quality/dimensional-validation",
-                                            {
-                                                "group": "Data Quality as Code",
-                                                "pages": [
-                                                    "v1.11.x/how-to-guides/data-quality-observability/quality/data-quality-as-code/index",
-                                                    "v1.11.x/how-to-guides/data-quality-observability/quality/data-quality-as-code/getting-started",
-                                                    "v1.11.x/how-to-guides/data-quality-observability/quality/data-quality-as-code/test-runner",
-                                                    "v1.11.x/how-to-guides/data-quality-observability/quality/data-quality-as-code/dataframe-validation",
-                                                    "v1.11.x/how-to-guides/data-quality-observability/quality/data-quality-as-code/test-definitions",
-                                                    "v1.11.x/how-to-guides/data-quality-observability/quality/data-quality-as-code/advanced-usage"
-                                                ]
-                                            },
-                                            "v1.11.x/how-to-guides/data-quality-observability/quality/custom-tests"
-                                        ]
-                                    },
-                                    {
-                                        "group": "Data Profiler",
-                                        "pages": [
-                                            "v1.11.x/how-to-guides/data-quality-observability/profiler/index",
-                                            "v1.11.x/how-to-guides/data-quality-observability/profiler/profiler-workflow",
-                                            "v1.11.x/how-to-guides/data-quality-observability/profiler/metrics",
-                                            "v1.11.x/how-to-guides/data-quality-observability/profiler/custom-metrics",
-                                            "v1.11.x/how-to-guides/data-quality-observability/profiler/external-workflow"
-                                        ]
-                                    },
-                                    {
-                                        "group": "Alerts & Notifications",
-                                        "pages": [
-                                            "v1.11.x/how-to-guides/data-quality-observability/alerts-notifications/index",
-                                            "v1.11.x/how-to-guides/data-quality-observability/alerts-notifications/data-observability-alerts",
-                                            "v1.11.x/how-to-guides/data-quality-observability/alerts-notifications/system-governance-notifications",
-                                            "v1.11.x/how-to-guides/data-quality-observability/alerts-notifications/email-alerts-configuration",
-                                            "v1.11.x/how-to-guides/data-quality-observability/alerts-notifications/slack-alerts-configuration",
-                                            "v1.11.x/how-to-guides/data-quality-observability/alerts-notifications/microsoft-teams-alerts-configuration",
-                                            "v1.11.x/how-to-guides/data-quality-observability/alerts-notifications/google-chat-alerts-configuration",
-                                            "v1.11.x/how-to-guides/data-quality-observability/alerts-notifications/generic-webhook-alerts-configuration"
-                                        ]
-                                    },
-                                    {
-                                        "group": "Incident Manager",
-                                        "pages": [
-                                            "v1.11.x/how-to-guides/data-quality-observability/incident-manager/index",
-                                            "v1.11.x/how-to-guides/data-quality-observability/incident-manager/workflow"
-                                        ]
-                                    }
-                                ]
-                            },
-                            {
-                                "group": "Data Quality and Profiler",
-                                "pages": [
-                                    {
-                                        "group": "Data Quality",
-                                        "pages": [
-                                            "v1.11.x/how-to-guides/data-quality-observability/quality/tab",
-                                            "v1.11.x/how-to-guides/data-quality-observability/quality/test"
-                                        ]
-                                    },
-                                    {
-                                        "group": "Data Profiler",
-                                        "pages": [
-                                            "v1.11.x/how-to-guides/data-quality-observability/profiler/tab"
-                                        ]
-                                    }
-                                ]
-                            },
-                            {
-                                "group": "Data Quality Observability",
-                                "pages": [
-                                    {
-                                        "group": "Data Quality",
-                                        "pages": [
-                                            "v1.11.x/how-to-guides/data-quality-observability/quality/adding-test-cases",
-                                            "v1.11.x/how-to-guides/data-quality-observability/quality/adding-test-suites",
-                                            "v1.11.x/how-to-guides/data-quality-observability/quality/test-cases-from-yaml-config",
-                                            "v1.11.x/how-to-guides/data-quality-observability/quality/visualize"
-                                        ]
-                                    }
-                                ]
-                            },
-                            {
-                                "group": "Data Lineage",
-                                "pages": [
-                                    "v1.11.x/how-to-guides/data-lineage/index",
-                                    "v1.11.x/how-to-guides/data-lineage/workflow",
-                                    "v1.11.x/how-to-guides/data-lineage/explore",
-                                    "v1.11.x/how-to-guides/data-lineage/column",
-                                    "v1.11.x/how-to-guides/data-lineage/manual"
-                                ]
-                            },
-                            {
-                                "group": "Data Insights",
-                                "pages": [
-                                    "v1.11.x/how-to-guides/data-insights/index",
-                                    "v1.11.x/how-to-guides/data-insights/tiering",
-                                    "v1.11.x/how-to-guides/data-insights/ingestion",
-                                    "v1.11.x/how-to-guides/data-insights/kpi",
-                                    "v1.11.x/how-to-guides/data-insights/elasticsearch-reindex",
-                                    "v1.11.x/how-to-guides/data-insights/report",
-                                    "v1.11.x/how-to-guides/data-insights/email-report",
-                                    "v1.11.x/how-to-guides/data-insights/data-culture",
-                                    "v1.11.x/how-to-guides/data-insights/service-insights"
-                                ]
-                            },
-                            {
-                                "group": "Data Governance",
-                                "pages": [
-                                    "v1.11.x/how-to-guides/data-governance/index",
-                                    {
-                                        "group": "Glossary",
-                                        "pages": [
-                                            "v1.11.x/how-to-guides/data-governance/glossary/index",
-                                            "v1.11.x/how-to-guides/data-governance/glossary/glossary-term",
-                                            "v1.11.x/how-to-guides/data-governance/glossary/setup",
-                                            "v1.11.x/how-to-guides/data-governance/glossary/create-terms",
-                                            "v1.11.x/how-to-guides/data-governance/glossary/import",
-                                            "v1.11.x/how-to-guides/data-governance/glossary/export",
-                                            "v1.11.x/how-to-guides/data-governance/glossary/approval",
-                                            "v1.11.x/how-to-guides/data-governance/glossary/troubleshooting",
-                                            "v1.11.x/how-to-guides/data-governance/glossary/styling",
-                                            "v1.11.x/how-to-guides/data-governance/glossary/assets",
-                                            "v1.11.x/how-to-guides/data-governance/glossary/best-practices"
-                                        ]
-                                    },
-                                    {
-                                        "group": "Classification",
-                                        "pages": [
-                                            "v1.11.x/how-to-guides/data-governance/classification/index",
-                                            "v1.11.x/how-to-guides/data-governance/classification/classification",
-                                            "v1.11.x/how-to-guides/data-governance/classification/assets",
-                                            "v1.11.x/how-to-guides/data-governance/classification/request-tags",
-                                            "v1.11.x/how-to-guides/data-governance/classification/sample-data-using-pii-tag",
-                                            {
-                                                "group": "Auto-Classification Workflow",
-                                                "pages": [
-                                                    "v1.11.x/how-to-guides/data-governance/classification/auto-classification/index",
-                                                    "v1.11.x/how-to-guides/data-governance/classification/auto-classification/workflow",
-                                                    "v1.11.x/how-to-guides/data-governance/classification/auto-classification/external-workflow",
-                                                    "v1.11.x/how-to-guides/data-governance/classification/auto-classification/auto-pii-tagging",
-                                                    "v1.11.x/how-to-guides/data-governance/classification/auto-classification/external-sample-data"
-                                                ]
-                                            },
-                                            "v1.11.x/how-to-guides/data-governance/classification/tiers",
-                                            "v1.11.x/how-to-guides/data-governance/classification/best-practices"
-                                        ]
-                                    },
-                                    {
-                                        "group": "Domains & Data Product",
-                                        "pages": [
-                                            "v1.11.x/how-to-guides/data-governance/domains-&-data-products/index",
-                                            "v1.11.x/how-to-guides/data-governance/domains-&-data-products/domains",
-                                            "v1.11.x/how-to-guides/data-governance/domains-&-data-products/data-products"
-                                        ]
-                                    },
-                                    "v1.11.x/how-to-guides/data-governance/metrics"
+                                    "v1.11.x/how-to-guides/admin-guide/persona-landing-page-customization/index",
+                                    "v1.11.x/how-to-guides/admin-guide/persona-landing-page-customization/customizable-landing-page",
+                                    "v1.11.x/how-to-guides/admin-guide/persona-landing-page-customization/defining-persona"
                                 ]
                             }
+                        ]
+                    }
+                ]
+            },
+            {
+                "tab": "Guide for Data Users",
+                "groups": [
+                    {
+                        "group": "Guide for Data Users",
+                        "pages": [
+                            "v1.11.x/how-to-guides/guide-for-data-users/index",
+                            "v1.11.x/how-to-guides/guide-for-data-users/basics-openmetadata",
+                            "v1.11.x/how-to-guides/guide-for-data-users/data-asset-tabs",
+                            "v1.11.x/how-to-guides/guide-for-data-users/description",
+                            "v1.11.x/how-to-guides/guide-for-data-users/request-description",
+                            "v1.11.x/how-to-guides/guide-for-data-users/data-ownership",
+                            "v1.11.x/how-to-guides/guide-for-data-users/follow-data-asset",
+                            "v1.11.x/how-to-guides/guide-for-data-users/tags",
+                            "v1.11.x/how-to-guides/guide-for-data-users/request-tags",
+                            "v1.11.x/how-to-guides/guide-for-data-users/glossary",
+                            "v1.11.x/how-to-guides/guide-for-data-users/custom",
+                            "v1.11.x/how-to-guides/guide-for-data-users/theme",
+                            "v1.11.x/how-to-guides/guide-for-data-users/announcements",
+                            "v1.11.x/how-to-guides/guide-for-data-users/add-announcement",
+                            "v1.11.x/how-to-guides/guide-for-data-users/versions",
+                            "v1.11.x/how-to-guides/guide-for-data-users/delete",
+                            "v1.11.x/how-to-guides/guide-for-data-users/browser-ext"
+                        ]
+                    }
+                ]
+            },
+            {
+                "tab": "Data Discovery",
+                "groups": [
+                    {
+                        "group": "Data Discovery",
+                        "pages": [
+                            "v1.11.x/how-to-guides/data-discovery/index",
+                            "v1.11.x/how-to-guides/data-discovery/discover",
+                            "v1.11.x/how-to-guides/data-discovery/hierarchy",
+                            "v1.11.x/how-to-guides/data-discovery/preview",
+                            "v1.11.x/how-to-guides/data-discovery/details",
+                            "v1.11.x/how-to-guides/data-discovery/advanced",
+                            "v1.11.x/how-to-guides/data-discovery/bulk-upload",
+                            "v1.11.x/how-to-guides/data-discovery/import",
+                            "v1.11.x/how-to-guides/data-discovery/export",
+                            "v1.11.x/how-to-guides/data-discovery/troubleshooting",
+                            "v1.11.x/how-to-guides/data-discovery/table-constraint",
+                            {
+                                "group": "OpenMetadata Chrome Extension",
+                                "pages": [
+                                    "v1.11.x/how-to-guides/data-discovery/openmetadata-extension",
+                                    "v1.11.x/how-to-guides/data-discovery/openmetadata-extension/activity-feeds",
+                                    "v1.11.x/how-to-guides/data-discovery/openmetadata-extension/looking-up",
+                                    "v1.11.x/how-to-guides/data-discovery/openmetadata-extension/viewing-tasks"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "tab": "Data Contracts",
+                "groups": [
+                    {
+                        "group": "Data Contracts",
+                        "pages": [
+                            "v1.11.x/how-to-guides/data-contracts/index",
+                            "v1.11.x/how-to-guides/data-contracts/create",
+                            "v1.11.x/how-to-guides/data-contracts/spec"
+                        ]
+                    }
+                ]
+            },
+            {
+                "tab": "Data Collaboration",
+                "groups": [
+                    {
+                        "group": "Data Collaboration",
+                        "pages": [
+                            "v1.11.x/how-to-guides/data-collaboration/index",
+                            "v1.11.x/how-to-guides/data-collaboration/activity-feeds",
+                            "v1.11.x/how-to-guides/data-collaboration/conversation",
+                            "v1.11.x/how-to-guides/data-collaboration/tasks",
+                            "v1.11.x/how-to-guides/data-collaboration/request-description",
+                            "v1.11.x/how-to-guides/data-collaboration/request-tags",
+                            "v1.11.x/how-to-guides/data-collaboration/announcements",
+                            "v1.11.x/how-to-guides/data-collaboration/add-announcement"
+                        ]
+                    }
+                ]
+            },
+            {
+                "tab": "Data Quality and Observability",
+                "groups": [
+                    {
+                        "group": "Data Quality and Observability",
+                        "pages": [
+                            "v1.11.x/how-to-guides/data-quality-observability/index",
+                            {
+                                "group": "Data Quality",
+                                "pages": [
+                                    "v1.11.x/how-to-guides/data-quality-observability/quality/index",
+                                    "v1.11.x/how-to-guides/data-quality-observability/quality/configure",
+                                    "v1.11.x/how-to-guides/data-quality-observability/quality/tests-yaml",
+                                    "v1.11.x/how-to-guides/data-quality-observability/quality/tests-ui",
+                                    "v1.11.x/how-to-guides/data-quality-observability/quality/dimensional-validation",
+                                    {
+                                        "group": "Data Quality as Code",
+                                        "pages": [
+                                            "v1.11.x/how-to-guides/data-quality-observability/quality/data-quality-as-code/index",
+                                            "v1.11.x/how-to-guides/data-quality-observability/quality/data-quality-as-code/getting-started",
+                                            "v1.11.x/how-to-guides/data-quality-observability/quality/data-quality-as-code/test-runner",
+                                            "v1.11.x/how-to-guides/data-quality-observability/quality/data-quality-as-code/dataframe-validation",
+                                            "v1.11.x/how-to-guides/data-quality-observability/quality/data-quality-as-code/test-definitions",
+                                            "v1.11.x/how-to-guides/data-quality-observability/quality/data-quality-as-code/advanced-usage"
+                                        ]
+                                    },
+                                    "v1.11.x/how-to-guides/data-quality-observability/quality/custom-tests"
+                                ]
+                            },
+                            {
+                                "group": "Data Profiler",
+                                "pages": [
+                                    "v1.11.x/how-to-guides/data-quality-observability/profiler/index",
+                                    "v1.11.x/how-to-guides/data-quality-observability/profiler/profiler-workflow",
+                                    "v1.11.x/how-to-guides/data-quality-observability/profiler/metrics",
+                                    "v1.11.x/how-to-guides/data-quality-observability/profiler/custom-metrics",
+                                    "v1.11.x/how-to-guides/data-quality-observability/profiler/external-workflow"
+                                ]
+                            },
+                            {
+                                "group": "Alerts & Notifications",
+                                "pages": [
+                                    "v1.11.x/how-to-guides/data-quality-observability/alerts-notifications/index",
+                                    "v1.11.x/how-to-guides/data-quality-observability/alerts-notifications/data-observability-alerts",
+                                    "v1.11.x/how-to-guides/data-quality-observability/alerts-notifications/system-governance-notifications",
+                                    "v1.11.x/how-to-guides/data-quality-observability/alerts-notifications/email-alerts-configuration",
+                                    "v1.11.x/how-to-guides/data-quality-observability/alerts-notifications/slack-alerts-configuration",
+                                    "v1.11.x/how-to-guides/data-quality-observability/alerts-notifications/microsoft-teams-alerts-configuration",
+                                    "v1.11.x/how-to-guides/data-quality-observability/alerts-notifications/google-chat-alerts-configuration",
+                                    "v1.11.x/how-to-guides/data-quality-observability/alerts-notifications/generic-webhook-alerts-configuration"
+                                ]
+                            },
+                            {
+                                "group": "Incident Manager",
+                                "pages": [
+                                    "v1.11.x/how-to-guides/data-quality-observability/incident-manager/index",
+                                    "v1.11.x/how-to-guides/data-quality-observability/incident-manager/workflow"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "tab": "Data Quality and Profiler",
+                "groups": [
+                    {
+                        "group": "Data Quality and Profiler",
+                        "pages": [
+                            {
+                                "group": "Data Quality",
+                                "pages": [
+                                    "v1.11.x/how-to-guides/data-quality-observability/quality/tab",
+                                    "v1.11.x/how-to-guides/data-quality-observability/quality/test"
+                                ]
+                            },
+                            {
+                                "group": "Data Profiler",
+                                "pages": [
+                                    "v1.11.x/how-to-guides/data-quality-observability/profiler/tab"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "tab": "Data Quality Observability",
+                "groups": [
+                    {
+                        "group": "Data Quality Observability",
+                        "pages": [
+                            {
+                                "group": "Data Quality",
+                                "pages": [
+                                    "v1.11.x/how-to-guides/data-quality-observability/quality/adding-test-cases",
+                                    "v1.11.x/how-to-guides/data-quality-observability/quality/adding-test-suites",
+                                    "v1.11.x/how-to-guides/data-quality-observability/quality/test-cases-from-yaml-config",
+                                    "v1.11.x/how-to-guides/data-quality-observability/quality/visualize"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "tab": "Data Lineage",
+                "groups": [
+                    {
+                        "group": "Data Lineage",
+                        "pages": [
+                            "v1.11.x/how-to-guides/data-lineage/index",
+                            "v1.11.x/how-to-guides/data-lineage/workflow",
+                            "v1.11.x/how-to-guides/data-lineage/explore",
+                            "v1.11.x/how-to-guides/data-lineage/column",
+                            "v1.11.x/how-to-guides/data-lineage/manual"
+                        ]
+                    }
+                ]
+            },
+            {
+                "tab": "Data Insights",
+                "groups": [
+                    {
+                        "group": "Data Insights",
+                        "pages": [
+                            "v1.11.x/how-to-guides/data-insights/index",
+                            "v1.11.x/how-to-guides/data-insights/tiering",
+                            "v1.11.x/how-to-guides/data-insights/ingestion",
+                            "v1.11.x/how-to-guides/data-insights/kpi",
+                            "v1.11.x/how-to-guides/data-insights/elasticsearch-reindex",
+                            "v1.11.x/how-to-guides/data-insights/report",
+                            "v1.11.x/how-to-guides/data-insights/email-report",
+                            "v1.11.x/how-to-guides/data-insights/data-culture",
+                            "v1.11.x/how-to-guides/data-insights/service-insights"
+                        ]
+                    }
+                ]
+            },
+            {
+                "tab": "Data Governance",
+                "groups": [
+                    {
+                        "group": "Data Governance",
+                        "pages": [
+                            "v1.11.x/how-to-guides/data-governance/index",
+                            {
+                                "group": "Glossary",
+                                "pages": [
+                                    "v1.11.x/how-to-guides/data-governance/glossary/index",
+                                    "v1.11.x/how-to-guides/data-governance/glossary/glossary-term",
+                                    "v1.11.x/how-to-guides/data-governance/glossary/setup",
+                                    "v1.11.x/how-to-guides/data-governance/glossary/create-terms",
+                                    "v1.11.x/how-to-guides/data-governance/glossary/import",
+                                    "v1.11.x/how-to-guides/data-governance/glossary/export",
+                                    "v1.11.x/how-to-guides/data-governance/glossary/approval",
+                                    "v1.11.x/how-to-guides/data-governance/glossary/troubleshooting",
+                                    "v1.11.x/how-to-guides/data-governance/glossary/styling",
+                                    "v1.11.x/how-to-guides/data-governance/glossary/assets",
+                                    "v1.11.x/how-to-guides/data-governance/glossary/best-practices"
+                                ]
+                            },
+                            {
+                                "group": "Classification",
+                                "pages": [
+                                    "v1.11.x/how-to-guides/data-governance/classification/index",
+                                    "v1.11.x/how-to-guides/data-governance/classification/classification",
+                                    "v1.11.x/how-to-guides/data-governance/classification/assets",
+                                    "v1.11.x/how-to-guides/data-governance/classification/request-tags",
+                                    "v1.11.x/how-to-guides/data-governance/classification/sample-data-using-pii-tag",
+                                    {
+                                        "group": "Auto-Classification Workflow",
+                                        "pages": [
+                                            "v1.11.x/how-to-guides/data-governance/classification/auto-classification/index",
+                                            "v1.11.x/how-to-guides/data-governance/classification/auto-classification/workflow",
+                                            "v1.11.x/how-to-guides/data-governance/classification/auto-classification/external-workflow",
+                                            "v1.11.x/how-to-guides/data-governance/classification/auto-classification/auto-pii-tagging",
+                                            "v1.11.x/how-to-guides/data-governance/classification/auto-classification/external-sample-data"
+                                        ]
+                                    },
+                                    "v1.11.x/how-to-guides/data-governance/classification/tiers",
+                                    "v1.11.x/how-to-guides/data-governance/classification/best-practices"
+                                ]
+                            },
+                            {
+                                "group": "Domains & Data Product",
+                                "pages": [
+                                    "v1.11.x/how-to-guides/data-governance/domains-&-data-products/index",
+                                    "v1.11.x/how-to-guides/data-governance/domains-&-data-products/domains",
+                                    "v1.11.x/how-to-guides/data-governance/domains-&-data-products/data-products"
+                                ]
+                            },
+                            "v1.11.x/how-to-guides/data-governance/metrics"
                         ]
                     }
                 ]
@@ -2637,10 +2697,6 @@
     },
     "redirects": [
         {
-            "source": "/:path((?!v\\d+\\.\\d+\\.x).*)",
-            "destination": "/v1.11.x/:path"
-        },
-        {
             "source": "/main-concepts/*",
             "destination": "/"
         },
@@ -2665,12 +2721,8 @@
             "destination": "/how-to-guides/sso/*"
         },
         {
-            "source": "/collateai/*",
-            "destination": "/collate-ai/*"
-        },
-        {
-            "source": "/how-to-guides/mcp/*",
-            "destination": "/collate-ai/mcp/*"
+            "source": "/:path*",
+            "destination": "/v1.11.x/:path*"
         }
     ],
     "integrations": {
