@@ -749,6 +749,7 @@ body:not(:has(.homepage-container)) .mdx-content h1::before,
   margin-bottom: 16px;
   width: fit-content;
   flex-shrink: 0;
+  margin-top: -40px;
 }
 
 /* Hide search bar only when homepage-container class is present */
