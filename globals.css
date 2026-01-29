@@ -749,6 +749,9 @@ body:not(:has(.homepage-container)) .mdx-content h1::before,
   margin-bottom: 16px;
   width: fit-content;
   flex-shrink: 0;
+}
+
+h1.ConnectorName::before {
   margin-top: -40px;
 }
 
