@@ -910,7 +910,7 @@ article iframe,
 }
 
 .card.card:not(:has([data-component-part="card-icon"])) h2 {
-  color: #004CD3;
+  color: #6938EF;
   font-weight: 500;
   font-size: 20px;
   margin-bottom: 12px;
